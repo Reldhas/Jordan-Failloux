@@ -104,6 +104,36 @@ function buildProjectCard(cardData) {
     return projectCardDiv
 }
 
+function injectContact() {
+    fetch('./resources/contact-info.json')
+        .then(response => response.json())
+        .then(jsonData => {
+            for (const infoName in jsonData) {
+                const contactInfo = jsonData[infoName]
+                addContactInfo(infoName, contactInfo['icon'], contactInfo['text'], contactInfo['href'])
+            }
+        })
+}
+
+function addContactInfo(infoName, iconSrc, text, href) {
+    var contactDiv = document.getElementById(infoName + '-info')
+    if (href != "") {
+        contactDiv.setAttribute('onclick', "window.open('" + href + "','mywindow');")
+        contactDiv.setAttribute('style', 'cursor: pointer;')
+    }
+    
+    var icon = document.createElement('img')
+    icon.setAttribute('src', iconSrc)
+    icon.classList.add('contact-icon')
+    contactDiv.appendChild(icon)
+
+    var contactInfo = document.createElement('p')
+    contactInfo.innerHTML = text
+    contactInfo.classList.add("contact-detail")
+    contactDiv.appendChild(contactInfo)
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     injectProjectCard()
+    injectContact()
 })

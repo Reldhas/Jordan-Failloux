@@ -1,0 +1,5 @@
+{
+    "linkedin": { "icon": "./resources/linkedin-icon.png", "text": "in/jordanfailloux", "href": "https://www.linkedin.com/in/jordanfailloux/"},
+    "phone": { "icon": "./resources/smartphone-icon.png", "text": "+33 673721300", "href": ""},
+    "email": { "icon": "./resources/email-icon.png", "text": "jordanfailloux@gmail.com", "href": ""}
+}
