@@ -1,0 +1,22 @@
+{
+    "0": {
+        "title": "TotA",
+        "banner": { "type": "video", "url": "https://www.youtube.com/embed/7KvmLQV8ozE" },
+        "text": "Tales of the Apocalypse or TotA is a multiplayer survival game with top down view. This project was developed by a team of 4 people using Unity, Photon for the multiplayer and MagicaVoxel for the 3D models. This game features open world with procedurally generated environment and cities populated by NPCs such as Zombies, rats, and other survivors."
+    },
+    "1": {
+        "title": "Force Struggle",
+        "banner": { "type": "video", "url": "https://www.youtube.com/embed/l-dx_VA3bBc" },
+        "text": "Force Struggle is a two-player VR game developed by a team of 3 people using Unity. In the game, players use telekinesis to throw boulders at each other. In this project we experiment with VR controllers movements to achieve a satisfying telekinesis mechanic."
+    },
+    "2": {
+        "title": "Plane animation",
+        "banner": { "type": "video", "url": "https://www.youtube.com/embed/k4FPP6UYwAw" },
+        "text": "This project shows a short animation of a plane flying over a terrain generated using Perlin noise as a height map. This animation was programmed using OpenGL."
+    },
+	"3": {
+        "title": "Portal 0",
+        "banner": { "type": "video", "url": "https://www.youtube.com/embed/n6jIWLoBZiE" },
+        "text": "This project showcases functional protals implemented using OpenGL, where we experiment with the stencil buffer to achieve accurate view through the portals."
+    }
+}
