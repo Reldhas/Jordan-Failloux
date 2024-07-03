@@ -162,3 +162,7 @@ section:nth-child(odd)
 .contact-info {
     margin: 7vh;
 }
+
+#presentation {
+    color: #A3BCF9;
+}

@@ -11,7 +11,7 @@ const scene = new THREE.Scene()
  * Object
  */
 // Material
-const material = new THREE.MeshToonMaterial({ color: '#ffeded' })
+const material = new THREE.MeshToonMaterial({ color: '#fff4e4' })
 
 // Meshes
 const mesh1 = new THREE.Mesh(
@@ -22,7 +22,7 @@ const mesh1 = new THREE.Mesh(
 mesh1.position.x += 2
 mesh1.scale.set(0.75, 0.75, 0.75)
 
-scene.add(mesh1)
+// scene.add(mesh1)
 
 /**
  * Particles
@@ -45,7 +45,7 @@ particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 
 const particlesMaterial = new THREE.PointsMaterial({
     color: '#ffeded',
     sizeAttenuation: true,
-    size: 0.03
+    size: 0.05
 })
 // Points
 const particles = new THREE.Points(particlesGeometry, particlesMaterial)
